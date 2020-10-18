@@ -58,7 +58,7 @@ export default {
     mounted() {
         watchEffect(
             onInvalidate => {
-                const [response, controller] = get('/text.txt');
+                const [response, controller] = get('text.txt');
                 response.then(text => {
                     this.text = text;
                 });

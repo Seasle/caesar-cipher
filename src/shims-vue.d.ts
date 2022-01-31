@@ -4,10 +4,3 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>;
   export default component;
 }
-
-import ApexCharts from 'apexcharts';
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $apexcharts: typeof ApexCharts;
-  }
-}
